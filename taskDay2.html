@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<link href="taskDay2.css" rel="stylesheet"/>
+		<div id="judul">My Personal Page</div>
+		<div id="name">Faza Ghassani</div>
+		<div id="Avatar">
+			<img src="avatar.jpeg" alt="Image not available">
+		</div>
+		<div id="buttonSkill">
+			<button onclick="clicked()">Skill Data</button>
+		</div>
+		<div id = "hiddenBullets" style="display:none;">
+			<ul></ul>
+		</div>
+		<script>
+			const skillData = ["JavaScript", "Angular", "Java", "Spring Boot"];
+			
+			//insert skillData into div with loop
+			let data = document.querySelector('#hiddenBullets');
+			function inputData(param){
+				let li = document.createElement("li");
+				li.textContent = param;
+				return li;
+			}
+			for(let i = 0; i < skillData.length; i++){
+				data.appendChild(inputData(skillData[i]));
+			}
+			
+			//button fucntion
+			const clicked = function(){ //disimpen di variable dulu baru bisa
+				//alert("Skill Data : JavaScript, Java");
+				var x = document.getElementById("hiddenBullets");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>

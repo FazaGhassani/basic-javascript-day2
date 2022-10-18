@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 { color: #333; }
+
+button {
+  height: 30px;
+  border-radius: 12px;
+}
+
+button:focus {
+  background: #ffa500;
+}
+
+button:active {
+  background: #ff6600;
+}
+
+#judul {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 19px;
+	letter-spacing: -0.6px;
+	word-spacing: 0.4px;
+	color: #000000;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+#name {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 19px;
+	letter-spacing: -0.6px;
+	word-spacing: 0.4px;
+	color: #000000;
+	font-weight: 400;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+}
